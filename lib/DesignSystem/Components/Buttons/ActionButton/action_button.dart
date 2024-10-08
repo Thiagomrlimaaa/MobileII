@@ -39,13 +39,13 @@ class ActionButton extends StatelessWidget {
 
     switch (viewModel.style) {
       case ActionButtonStyle.primary:
-        buttonColor = lightPrimaryBrandColor;
+        buttonColor = normalPrimaryBrandColor;
         break;
       case ActionButtonStyle.secondary:
-        buttonColor = lightSecondaryBrandColor;
+        buttonColor = normalSecondaryBrandColor;
         break;
       case ActionButtonStyle.tertiary:
-        buttonColor = lightTertiaryBrandColor;
+        buttonColor = normalTertiaryBrandColor;
         break;
       default:
     }
