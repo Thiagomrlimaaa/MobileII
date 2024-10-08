@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mobileii/View/Login/login.dart';
 import '../DesignSystem/Samples/actionButtonSampleScreen/action_button_sample_screen.dart';
 import '../DesignSystem/Samples/bottomTabBarSampleScreen/bottom_tab_bar_sample_screen.dart';
 import '../DesignSystem/Samples/inputFieldSampleScreen/input_field_sample_screen.dart';
@@ -18,10 +19,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        colorScheme: ColorScheme.fromSeed(seedColor: const Color.fromARGB(255, 0, 0, 0)),
         useMaterial3: true,
       ),
-      home: const ButtonScreen(),
+      home: const LoginView(),
     );
   }
 }
