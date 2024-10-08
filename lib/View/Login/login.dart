@@ -5,6 +5,7 @@ import 'package:mobileii/DesignSystem/Components/InputField/input_text_view_mode
 import 'package:mobileii/DesignSystem/Components/LinkedLabel/linked_label.dart';
 import 'package:mobileii/DesignSystem/Components/LinkedLabel/linked_label_view_model.dart';
 import 'package:mobileii/View/Register/register.dart';
+import 'package:mobileii/View/Profile/profile.dart';
 import 'package:flutter/material.dart';
 
 class LoginView extends StatefulWidget {
@@ -92,6 +93,9 @@ class _LoginViewState extends State<LoginView> {
                     style: ActionButtonStyle.primary,
                     text: 'Login',
                     onPressed: () {
+                      Navigator.push(context, MaterialPageRoute(
+                      builder: (context) => const ProfileView(),
+                    ));
                     },
                   ),
                 ),
